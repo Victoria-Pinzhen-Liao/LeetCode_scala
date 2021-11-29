@@ -1,17 +1,11 @@
 package LeetCodeCN
 
-object InorderTraversal  {
-  val three = TreeNode(3, null, null)
-  val two = TreeNode(2, three, null)
-  val root = TreeNode(1, null, two)
-
-  def inorderTraversal(node: TreeNode): List[Int] = {
-    if (node != null) {
+object LeetCode_94_Binary_Tree_Inorder_Traversal {
+  def inorderTraversal(root: TreeNode): List[Int] = {
+    if (root != null) {
       {
-        inorderTraversal(node.left) :+ node.value
-      } ++ inorderTraversal(node.right)
+        inorderTraversal(root.left) :+ root.value
+      } ++ inorderTraversal(root.right)
     } else List()
   }
-
-  println(inorderTraversal(root))
 }

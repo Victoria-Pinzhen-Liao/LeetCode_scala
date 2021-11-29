@@ -1,15 +1,9 @@
 package LeetCodeCN
 
-object PreorderTraversal  {
-  val three = TreeNode(3, null, null)
-  val two = TreeNode(2, three, null)
-  val root = TreeNode(1, null, two)
-
+object LeetCode_144_Binary_Tree_Preorder_Traversal {
   def preorderTraversal(node: TreeNode): List[Int] = {
     if (node != null) {
-        node.value :: preorderTraversal(node.left) ++ preorderTraversal(node.right)
+      node.value :: preorderTraversal(node.left) ++ preorderTraversal(node.right)
     } else List()
   }
-
-  println(preorderTraversal(root))
 }
