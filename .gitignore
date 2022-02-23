@@ -1,5 +1,15 @@
-# Project exclude paths
-/project/target/
-/target/
-/target/scala-2.13/classes/
-/target/scala-2.13/test-classes/
+*.DS_Store
+*.swp
+*~
+*.class
+*.tasty
+target/
+logs/
+.bloop
+.dotty-ide-artifact
+.dotty-ide.json
+.idea
+.metals
+.vscode
+*.csv
+*.dat
